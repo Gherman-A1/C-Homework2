@@ -2,7 +2,7 @@
 int Prompt(string message)
 {
     System.Console.Write(message);
-    string value=Console.ReadLine();
+    string value=Console.ReadLine()!;
     int result=Convert.ToInt32(value);
     return result;
 }
@@ -15,7 +15,7 @@ if(number<100||number>=1000)
     return;
 }
 
-Console.WriteLine($"Введеное число'{number}'");
+Console.WriteLine($"Введенное число'{number}'");
 
 int secondRank=number/10%10;
 
